@@ -1,5 +1,5 @@
-import React, { useContext, useEffect } from 'react'
-import List from '../../components/list'
+import React, { useContext, useEffect, useState } from 'react'
+import List from '../../components/list/List'
 import FloatingPageRouter from '../../components/common/FloatingPageRouter/FloatingPageRouter'
 import Chat from '../chat/Chat'
 import ContactInfo from '../contactInfo/ContactInfo'
@@ -8,7 +8,7 @@ import {FetchContacts} from '../../../common/Server'
 
 
 export default function Home() {
-    const [currentPage, setCurrentPage] = useState('chatList')
+    const [currentPage, setCurrentPage] = useState('contactInfo')
     const {contactData, contactDataDispatcher} = useContext(contactContext)
 
     useEffect(() => {
@@ -17,10 +17,14 @@ export default function Home() {
 
 
     return (
-        <div>sdf
-            <List itemsInfo={} currentPage={} ></List>
-            <FloatingPageRouter component={Chat} currentPage={} />
-            <FloatingPageRouter component={ContactInfo} currentPage={} />
+        <div>
+            {/* <List itemsInfo={contactData} currentPage={} ></List> */}
+            <FloatingPageRouter path="chat" currentPage={currentPage} >
+                <Chat/>
+            </FloatingPageRouter>
+            <FloatingPageRouter path="contactInfo" currentPage={currentPage} >
+                <ContactInfo/>
+            </FloatingPageRouter>
         </div>
     )
 }

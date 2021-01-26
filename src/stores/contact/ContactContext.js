@@ -1,5 +1,5 @@
 import React, { createContext ,useReducer} from 'react'
-import {contactReducer} from './ContactReducer'
+import {ContactReducer} from './ContactReducer'
 
 
 
@@ -8,7 +8,7 @@ export const contactContext = createContext()
 
 
 function ContactContextPorvider(props){
-    const [contactData , contactDataDispatcher] = useReducer(contactReducer , {
+    const [contactData , contactDataDispatcher] = useReducer(ContactReducer , {
         contacts :{
             status : null ,
             data : null ,

@@ -1,4 +1,4 @@
-export function contactReducer(state , action){
+export function ContactReducer(state , action){
     console.log(state)
     switch (action.type) {
         case 'GET_CONTACTS_REQUEST':
