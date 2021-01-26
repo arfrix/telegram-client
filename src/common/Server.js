@@ -1,11 +1,35 @@
-import React, {useContext} from 'react'
+import React, { useContext } from 'react'
 import {contactContext} from '../stores/contact/ContactContext'
 
 
-export function getContacts() {
-    const {contactDataDispatch} = useContext(contactContext)
-    contactDataDispatch.dispatch({
+export function FetchContacts(props) {
+
+    const data = [
+        {
+            name:'asghat',
+            phoneNumber: 9809120003335 ,
+            profilePic: null
+        },
+        {
+            name:'aatefe',
+            phoneNumber: 9809120553335 ,
+            profilePic: null
+        },
+        {
+            name:'monir',
+            phoneNumber: 9809124403335 ,
+            profilePic: null
+        },
+        {
+            name:'sohrab',
+            phoneNumber: 9809120903335 ,
+            profilePic: null
+        },
+    ]
+    
+    props.dispatch({
         type: 'GET_CONTACTS_SUCCESSFUL',
-        payload: 'data'
+        payload: data
     })
+  
 }

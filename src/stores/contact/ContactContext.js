@@ -8,7 +8,7 @@ export const contactContext = createContext()
 
 
 function ContactContextPorvider(props){
-    const [contactData , contactDataDispatch] = useReducer(contactReducer , {
+    const [contactData , contactDataDispatcher] = useReducer(contactReducer , {
         contacts :{
             status : null ,
             data : null ,
@@ -18,7 +18,7 @@ function ContactContextPorvider(props){
     })
 
     return(
-        <contactContext.Provider value={{contactData , contactDataDispatch}}>
+        <contactContext.Provider value={{contactData , contactDataDispatcher}}>
             {props.children}
         </contactContext.Provider>
     )
