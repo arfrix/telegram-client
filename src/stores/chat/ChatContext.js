@@ -1,5 +1,5 @@
 import React, { createContext ,useReducer} from 'react'
-import {ChatReducer} from './ChatReducer'
+import {ChatReducer} from './ChatRducer'
 
 
 

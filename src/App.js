@@ -1,6 +1,7 @@
 import './App.css';
 import Home from './view/pages/home/Home'
 import ContactContextProvider from './stores/contact/ContactContext'
+import ChatContextProvider from './stores/chat/ChatContext'
 
 function App() {
 
@@ -8,7 +9,9 @@ function App() {
 
   return (
     <ContactContextProvider>
-      <Home/>
+      <ChatContextProvider>
+        <Home/>
+      </ChatContextProvider>
     </ContactContextProvider>
   );
 }
