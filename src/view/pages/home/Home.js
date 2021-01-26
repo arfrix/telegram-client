@@ -12,9 +12,8 @@ export default function Home() {
     const {contactData, contactDataDispatcher} = useContext(contactContext)
 
     useEffect(() => {
-        FetchContacts({dispatch: contactDataDispatcher })
-         console.log(contactData)
-    }, [])
+        FetchContacts({dispatcher: contactDataDispatcher })
+        }, [])
 
 
     return (

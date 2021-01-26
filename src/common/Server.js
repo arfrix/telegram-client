@@ -27,7 +27,7 @@ export function FetchContacts(props) {
         },
     ]
     
-    props.dispatch({
+    props.dispatcher({
         type: 'GET_CONTACTS_SUCCESSFUL',
         payload: data
     })
