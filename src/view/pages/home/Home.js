@@ -4,15 +4,19 @@ import FloatingPageRouter from '../../components/common/FloatingPageRouter/Float
 import Chat from '../chat/Chat'
 import ContactInfo from '../contactInfo/ContactInfo'
 import {contactContext} from '../../../stores/contact/ContactContext'
+import {chatContext} from '../../../stores/chat/ChatContext'
 import {FetchContacts} from '../../../common/Server'
+import {FetchChats} from '../../../common/Server'
 
 
 export default function Home() {
     const [currentPage, setCurrentPage] = useState('contactInfo')
     const {contactData, contactDataDispatcher} = useContext(contactContext)
+    const {chatData, chatDataDispatcher} = useContext(chatContext)
 
     useEffect(() => {
         FetchContacts({dispatcher: contactDataDispatcher })
+        FetchChats({dispatcher: chatDataDispatcher })
         }, [])
 
 
