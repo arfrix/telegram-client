@@ -3,9 +3,11 @@ import images from '../../../res/images'
 import './List.scss'
 
 export default function List({itemsInfo, currentPage}) {
+    console.log(itemsInfo.data)
+
+    const isChat = currentPage === 'chat'
     
     function CardContent({username, lastMessage}) {
-        console.log(images.image.profilePicSample.default)
         if(currentPage === 'chat') {
             return (
                 <>
@@ -21,7 +23,7 @@ export default function List({itemsInfo, currentPage}) {
 
     return (
         <div className="list">
-            {itemsInfo.chats.data.map((data) => 
+            {isChat ? itemsInfo.chats.data.map((data) => 
             <div className="card">
                 <img className="card__proifleImg" src={images.image.profilePicSample.default}/>
                 <div className="card__content">
@@ -29,6 +31,14 @@ export default function List({itemsInfo, currentPage}) {
                 </div>
             </div>
             
+            ) :
+            itemsInfo.contacts.data.map((data) => 
+            <div className="card">
+                <img className="card__proifleImg" src={images.image.profilePicSample.default}/>
+                <div className="card__content">
+                    <CardContent username={data.name}/>
+                </div>
+            </div>
             )}
         </div>
     )

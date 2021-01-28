@@ -10,7 +10,7 @@ import {FetchChats} from '../../../common/Server'
 
 
 export default function Home() {
-    const [currentPage, setCurrentPage] = useState('chat')
+    const [currentPage, setCurrentPage] = useState('contactInfo')
     const {contactData, contactDataDispatcher} = useContext(contactContext)
     const {chatData, chatDataDispatcher} = useContext(chatContext)
 
@@ -26,12 +26,12 @@ export default function Home() {
         return contactData;
     }
 
-    console.log(chatData.chats.data)
+    console.log(contactData)
 
     return (
       
         <div>
-            {chatData.chats.data &&  <List itemsInfo={listItemsData(currentPage)} currentPage={currentPage}></List>}
+            {chatData.chats.data && contactData.contacts.data &&  <List itemsInfo={listItemsData(currentPage)} currentPage={currentPage}></List>}
             <FloatingPageRouter path="chat" currentPage={currentPage} >
                 <Chat/>
             </FloatingPageRouter>
