@@ -1,0 +1,34 @@
+
+
+.list {
+    height: 100vh;
+    max-width: 200px;
+    background-color: rgb(194, 222, 255);
+}
+
+.card {
+    width: 200px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.205);    
+    &__username {
+        font-weight: bold;
+    }
+
+    &__lastMessage {
+        font-size: 12px;
+    }
+
+    &__proifleImg {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+
+    &__content {
+        margin-left: 10px;
+    }
+}
