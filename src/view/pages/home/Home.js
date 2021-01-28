@@ -10,19 +10,28 @@ import {FetchChats} from '../../../common/Server'
 
 
 export default function Home() {
-    const [currentPage, setCurrentPage] = useState('contactInfo')
+    const [currentPage, setCurrentPage] = useState('chat')
     const {contactData, contactDataDispatcher} = useContext(contactContext)
     const {chatData, chatDataDispatcher} = useContext(chatContext)
 
     useEffect(() => {
         FetchContacts({dispatcher: contactDataDispatcher })
         FetchChats({dispatcher: chatDataDispatcher })
-        }, [])
+    }, [])
 
+    function listItemsData(currentPage) {
+        if(currentPage === 'chat') {
+            return chatData
+        }
+        return contactData;
+    }
+
+    console.log(chatData.chats.data)
 
     return (
+      
         <div>
-            {/* <List itemsInfo={contactData} currentPage={} ></List> */}
+            {chatData.chats.data &&  <List itemsInfo={listItemsData(currentPage)} currentPage={currentPage}></List>}
             <FloatingPageRouter path="chat" currentPage={currentPage} >
                 <Chat/>
             </FloatingPageRouter>
@@ -31,4 +40,4 @@ export default function Home() {
             </FloatingPageRouter>
         </div>
     )
-}
+    }
