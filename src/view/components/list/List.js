@@ -2,7 +2,7 @@ import React from 'react'
 import images from '../../../res/images'
 import './List.scss'
 
-export default function List({itemsInfo, currentPage}) {
+export default function List({itemsInfo, currentPage, onClick}) {
     console.log(itemsInfo.data)
 
     const isChat = currentPage === 'chat'
@@ -33,7 +33,7 @@ export default function List({itemsInfo, currentPage}) {
             
             ) :
             itemsInfo.contacts.data.map((data) => 
-            <div className="card">
+            <div className="card" onClick={() => onClick(data)}>
                 <img className="card__proifleImg" src={images.image.profilePicSample.default}/>
                 <div className="card__content">
                     <CardContent username={data.name}/>

@@ -13,7 +13,7 @@ export default function Home() {
     const [currentPage, setCurrentPage] = useState('contactInfo')
     const {contactData, contactDataDispatcher} = useContext(contactContext)
     const {chatData, chatDataDispatcher} = useContext(chatContext)
-
+    const [selectedListItem, setSelectedListItem] = useState(null)
     useEffect(() => {
         FetchContacts({dispatcher: contactDataDispatcher })
         FetchChats({dispatcher: chatDataDispatcher })
@@ -31,7 +31,7 @@ export default function Home() {
     return (
       
         <div>
-            {chatData.chats.data && contactData.contacts.data &&  <List itemsInfo={listItemsData(currentPage)} currentPage={currentPage}></List>}
+            {chatData.chats.data && contactData.contacts.data &&  <List itemsInfo={listItemsData(currentPage)} currentPage={currentPage} onClick={setSelectedListItem}></List>}
             <FloatingPageRouter path="chat" currentPage={currentPage} >
                 <Chat/>
             </FloatingPageRouter>
