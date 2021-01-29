@@ -27,7 +27,8 @@ export default function Home() {
         return contactData;
     }
 
-    console.log(selectedListItem)
+     console.log(chatData)
+     console.log(contactData)
 
     return (
         

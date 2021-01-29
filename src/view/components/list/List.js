@@ -3,7 +3,7 @@ import images from '../../../res/images'
 import './List.scss'
 
 export default function List({itemsInfo, currentPage, onClick}) {
-    console.log(itemsInfo.data)
+  
 
     const isChat = currentPage === 'chat'
     

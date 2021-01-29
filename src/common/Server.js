@@ -74,325 +74,325 @@ export function FetchChats({dispatcher}) {
                     from: 'arfa',
                     to: 'neda',
                     type: 'simple',
-                    value: 'salam'
+                    message: 'salam'
                 },
                 {
                     from: 'neda',
                     to: 'arfa',
                     type: 'simple',
-                    value: 'salam'
+                    message: 'salam'
                 },
                 {
                     from: 'arfa',
                     to: 'neda',
                     type: 'simple',
-                    value: 'khobi ?'
+                    message: 'khobi ?'
                 },
                 {
                     from: 'arfa',
                     to: 'neda',
                     type: 'simple',
-                    value: 'salam'
+                    message: 'salam'
                 },
                 {
                     from: 'neda',
                     to: 'arfa',
                     type: 'simple',
-                    value: 'salam'
+                    message: 'salam'
                 },
                 {
                     from: 'arfa',
                     to: 'neda',
                     type: 'simple',
-                    value: 'khobi ?'
+                    message: 'khobi ?'
                 },
                 {
                     from: 'arfa',
                     to: 'neda',
                     type: 'simple',
-                    value: 'salam'
+                    message: 'salam'
                 },
                 {
                     from: 'neda',
                     to: 'arfa',
                     type: 'simple',
-                    value: 'salam'
+                    message: 'salam'
                 },
                 {
                     from: 'arfa',
                     to: 'neda',
                     type: 'simple',
-                    value: 'khobi ?'
+                    message: 'khobi ?'
                 },
                 {
                     from: 'arfa',
                     to: 'neda',
                     type: 'simple',
-                    value: 'salam'
+                    message: 'salam'
                 },
                 {
                     from: 'neda',
                     to: 'arfa',
                     type: 'simple',
-                    value: 'salam'
+                    message: 'salam'
                 },
                 {
                     from: 'arfa',
                     to: 'neda',
                     type: 'simple',
-                    value: 'khobi ?'
+                    message: 'khobi ?'
                 },
                 {
                     from: 'arfa',
                     to: 'neda',
                     type: 'simple',
-                    value: 'salam'
+                    message: 'salam'
                 },
                 {
                     from: 'neda',
                     to: 'arfa',
                     type: 'simple',
-                    value: 'salam'
+                    message: 'salam'
                 },
                 {
                     from: 'arfa',
                     to: 'neda',
                     type: 'simple',
-                    value: 'khobi ?'
+                    message: 'khobi ?'
                 },
                 {
                     from: 'arfa',
                     to: 'neda',
                     type: 'simple',
-                    value: 'salam'
+                    message: 'salam'
                 },
                 {
                     from: 'neda',
                     to: 'arfa',
                     type: 'simple',
-                    value: 'salam'
+                    message: 'salam'
                 },
                 {
                     from: 'arfa',
                     to: 'neda',
                     type: 'simple',
-                    value: 'khobi ?'
+                    message: 'khobi ?'
                 },
                 {
                     from: 'arfa',
                     to: 'neda',
                     type: 'simple',
-                    value: 'salam'
+                    message: 'salam'
                 },
                 {
                     from: 'neda',
                     to: 'arfa',
                     type: 'simple',
-                    value: 'salam'
+                    message: 'salam'
                 },
                 {
                     from: 'arfa',
                     to: 'neda',
                     type: 'simple',
-                    value: 'khobi ?'
+                    message: 'khobi ?'
                 },
                 {
                     from: 'arfa',
                     to: 'neda',
                     type: 'simple',
-                    value: 'salam'
+                    message: 'salam'
                 },
                 {
                     from: 'neda',
                     to: 'arfa',
                     type: 'simple',
-                    value: 'salam'
+                    message: 'salam'
                 },
                 {
                     from: 'arfa',
                     to: 'neda',
                     type: 'simple',
-                    value: 'khobi ?'
+                    message: 'khobi ?'
                 },
                 {
                     from: 'arfa',
                     to: 'neda',
                     type: 'simple',
-                    value: 'salam'
+                    message: 'salam'
                 },
                 {
                     from: 'neda',
                     to: 'arfa',
                     type: 'simple',
-                    value: 'salam'
+                    message: 'salam'
                 },
                 {
                     from: 'arfa',
                     to: 'neda',
                     type: 'simple',
-                    value: 'khobi ?'
+                    message: 'khobi ?'
                 },
                 {
                     from: 'arfa',
                     to: 'neda',
                     type: 'simple',
-                    value: 'salam'
+                    message: 'salam'
                 },
                 {
                     from: 'neda',
                     to: 'arfa',
                     type: 'simple',
-                    value: 'salam'
+                    message: 'salam'
                 },
                 {
                     from: 'arfa',
                     to: 'neda',
                     type: 'simple',
-                    value: 'khobi ?'
+                    message: 'khobi ?'
                 },
                 {
                     from: 'arfa',
                     to: 'neda',
                     type: 'simple',
-                    value: 'salam'
+                    message: 'salam'
                 },
                 {
                     from: 'neda',
                     to: 'arfa',
                     type: 'simple',
-                    value: 'salam'
+                    message: 'salam'
                 },
                 {
                     from: 'arfa',
                     to: 'neda',
                     type: 'simple',
-                    value: 'khobi ?'
+                    message: 'khobi ?'
                 },
                 {
                     from: 'arfa',
                     to: 'neda',
                     type: 'simple',
-                    value: 'salam'
+                    message: 'salam'
                 },
                 {
                     from: 'neda',
                     to: 'arfa',
                     type: 'simple',
-                    value: 'salam'
+                    message: 'salam'
                 },
                 {
                     from: 'arfa',
                     to: 'neda',
                     type: 'simple',
-                    value: 'khobi ?'
+                    message: 'khobi ?'
                 },
                 {
                     from: 'arfa',
                     to: 'neda',
                     type: 'simple',
-                    value: 'salam'
+                    message: 'salam'
                 },
                 {
                     from: 'neda',
                     to: 'arfa',
                     type: 'simple',
-                    value: 'salam'
+                    message: 'salam'
                 },
                 {
                     from: 'arfa',
                     to: 'neda',
                     type: 'simple',
-                    value: 'khobi ?'
+                    message: 'khobi ?'
                 },
                 {
                     from: 'arfa',
                     to: 'neda',
                     type: 'simple',
-                    value: 'salam'
+                    message: 'salam'
                 },
                 {
                     from: 'neda',
                     to: 'arfa',
                     type: 'simple',
-                    value: 'salam'
+                    message: 'salam'
                 },
                 {
                     from: 'arfa',
                     to: 'neda',
                     type: 'simple',
-                    value: 'khobi ?'
+                    message: 'khobi ?'
                 },
                 {
                     from: 'arfa',
                     to: 'neda',
                     type: 'simple',
-                    value: 'salam'
+                    message: 'salam'
                 },
                 {
                     from: 'neda',
                     to: 'arfa',
                     type: 'simple',
-                    value: 'salam'
+                    message: 'salam'
                 },
                 {
                     from: 'arfa',
                     to: 'neda',
                     type: 'simple',
-                    value: 'khobi ?'
+                    message: 'khobi ?'
                 },
                 {
                     from: 'arfa',
                     to: 'neda',
                     type: 'simple',
-                    value: 'salam'
+                    message: 'salam'
                 },
                 {
                     from: 'neda',
                     to: 'arfa',
                     type: 'simple',
-                    value: 'salam'
+                    message: 'salam'
                 },
                 {
                     from: 'arfa',
                     to: 'neda',
                     type: 'simple',
-                    value: 'khobi ?'
+                    message: 'khobi ?'
                 },
                 {
                     from: 'arfa',
                     to: 'neda',
                     type: 'simple',
-                    value: 'salam'
+                    message: 'salam'
                 },
                 {
                     from: 'neda',
                     to: 'arfa',
                     type: 'simple',
-                    value: 'salam'
+                    message: 'salam'
                 },
                 {
                     from: 'arfa',
                     to: 'neda',
                     type: 'simple',
-                    value: 'khobi ?'
+                    message: 'khobi ?'
                 },
                 {
                     from: 'arfa',
                     to: 'neda',
                     type: 'simple',
-                    value: 'salam'
+                    message: 'salam'
                 },
                 {
                     from: 'neda',
                     to: 'arfa',
                     type: 'simple',
-                    value: 'salam'
+                    message: 'salam'
                 },
                 {
                     from: 'arfa',
                     to: 'neda',
                     type: 'simple',
-                    value: 'khobi ?'
+                    message: 'khobi ?'
                 },
             ]
         }
@@ -400,6 +400,14 @@ export function FetchChats({dispatcher}) {
     
     dispatcher({
         type: 'GET_CHATS_SUCCESSFUL',
+        payload: data
+    })
+}
+
+export function postMessage({dispatcher, chatData: data}) {
+    console.log("feeeeeer")
+    dispatcher({
+        type: 'SEND_MESSAGE_SUCCESSFUL',
         payload: data
     })
 }

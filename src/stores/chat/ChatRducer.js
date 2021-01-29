@@ -1,5 +1,8 @@
+
+var array = require('lodash/array');
+
 export function ChatReducer(state , action){
-    console.log(state)
+    // console.log(state)
     switch (action.type) {
         case 'GET_CHATS_REQUEST':
             return{
@@ -27,6 +30,19 @@ export function ChatReducer(state , action){
                     data : null ,
                     error : action.payload        
                 }
+            }
+        case 'SEND_MESSAGE_SUCCESSFUL':
+           
+            const index = array.findIndex(state.chats.data, {name: action.payload.to})
+            state.chats.data[index] = action.payload
+            
+            return{
+                ...state ,
+                chats:{
+                    status : 'FINICHED' ,
+                    data : state.chats.data ,
+                    error : null        
+                } 
             }
 
         default:
