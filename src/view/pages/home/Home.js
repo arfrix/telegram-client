@@ -7,7 +7,7 @@ import {contactContext} from '../../../stores/contact/ContactContext'
 import {chatContext} from '../../../stores/chat/ChatContext'
 import {FetchContacts} from '../../../common/Server'
 import {FetchChats} from '../../../common/Server'
-
+import './Home.scss'
 
 export default function Home() {
     const [currentPage, setCurrentPage] = useState('contactInfo')
@@ -30,13 +30,15 @@ export default function Home() {
 
     return (
       
-        <div>
+        <div className="home">
+            <div onClick={() => setCurrentPage("contactInfo") }>contacts</div>
+            <div onClick={() => setCurrentPage("chat") }>chat</div>
             {chatData.chats.data && contactData.contacts.data &&  <List itemsInfo={listItemsData(currentPage)} currentPage={currentPage} onClick={setSelectedListItem}></List>}
             <FloatingPageRouter path="chat" currentPage={currentPage} >
-                <Chat/>
+                <Chat currentPage={currentPage} data={selectedListItem}/>
             </FloatingPageRouter>
             <FloatingPageRouter path="contactInfo" currentPage={currentPage} >
-                <ContactInfo/>
+                <ContactInfo data={selectedListItem}/>
             </FloatingPageRouter>
         </div>
     )

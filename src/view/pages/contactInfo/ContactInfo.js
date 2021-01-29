@@ -1,9 +1,11 @@
 import React from 'react'
 
-export default function ContactInfo() {
+export default function ContactInfo({data}) {
     return (
-        <div>
-            ContactInfo
+        <div className="contact">
+            <img className="contact__profileImg" src={data.profilePic} />
+            <div className="contact__name">{data.name}</div>
+            <div className="contact__phoneNumber">{data.phoneNumber}</div>
         </div>
     )
 }
