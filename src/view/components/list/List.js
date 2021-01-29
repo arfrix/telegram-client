@@ -24,10 +24,10 @@ export default function List({itemsInfo, currentPage, onClick}) {
     return (
         <div className="list">
             {isChat ? itemsInfo.chats.data.map((data) => 
-            <div className="card">
+            <div className="card" onClick={() => onClick(data)}>
                 <img className="card__proifleImg" src={images.image.profilePicSample.default}/>
                 <div className="card__content">
-                    <CardContent username={data.name} lastMessage={data.chats[data.chats.length - 1].value} />
+                    <CardContent username={data.name} lastMessage={data.messages[data.messages.length - 1].value} />
                 </div>
             </div>
             

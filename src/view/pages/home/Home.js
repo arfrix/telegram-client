@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useContext, useEffect, useRef, useState } from 'react'
 import List from '../../components/list/List'
 import FloatingPageRouter from '../../components/common/FloatingPageRouter/FloatingPageRouter'
 import Chat from '../chat/Chat'
@@ -17,6 +17,7 @@ export default function Home() {
     useEffect(() => {
         FetchContacts({dispatcher: contactDataDispatcher })
         FetchChats({dispatcher: chatDataDispatcher })
+        
     }, [])
 
     function listItemsData(currentPage) {
@@ -26,19 +27,19 @@ export default function Home() {
         return contactData;
     }
 
-    console.log(contactData)
+    console.log(selectedListItem)
 
     return (
-      
-        <div className="home">
-            <div onClick={() => setCurrentPage("contactInfo") }>contacts</div>
-            <div onClick={() => setCurrentPage("chat") }>chat</div>
-            {chatData.chats.data && contactData.contacts.data &&  <List itemsInfo={listItemsData(currentPage)} currentPage={currentPage} onClick={setSelectedListItem}></List>}
+        
+        <div className="home">  
+            <div onClick={() => { setCurrentPage("contactInfo"); setSelectedListItem(null)} }>contacts</div>
+            <div onClick={() => { setCurrentPage("chat"); setSelectedListItem(null)} }>chat</div>
+            {chatData.chats.data && contactData.contacts.data &&  <List itemsInfo={listItemsData(currentPage)} currentPage={currentPage} onClick={setSelectedListItem}></List>}  
             <FloatingPageRouter path="chat" currentPage={currentPage} >
-                <Chat currentPage={currentPage} data={selectedListItem}/>
+                {selectedListItem && <Chat currentPage={currentPage} data={selectedListItem}/>}
             </FloatingPageRouter>
             <FloatingPageRouter path="contactInfo" currentPage={currentPage} >
-                <ContactInfo data={selectedListItem}/>
+                {selectedListItem &&  <ContactInfo data={selectedListItem}/>}
             </FloatingPageRouter>
         </div>
     )

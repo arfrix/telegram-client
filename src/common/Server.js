@@ -39,7 +39,7 @@ export function FetchChats({dispatcher}) {
         {
             name:'ali',
             profilePic: null,
-            chats:[
+            messages:[
                 {
                     from: 'arfa',
                     to: 'ali',
@@ -69,7 +69,313 @@ export function FetchChats({dispatcher}) {
         {
             name:'neda',
             profilePic: null,
-            chats:[
+            messages:[
+                {
+                    from: 'arfa',
+                    to: 'neda',
+                    type: 'simple',
+                    value: 'salam'
+                },
+                {
+                    from: 'neda',
+                    to: 'arfa',
+                    type: 'simple',
+                    value: 'salam'
+                },
+                {
+                    from: 'arfa',
+                    to: 'neda',
+                    type: 'simple',
+                    value: 'khobi ?'
+                },
+                {
+                    from: 'arfa',
+                    to: 'neda',
+                    type: 'simple',
+                    value: 'salam'
+                },
+                {
+                    from: 'neda',
+                    to: 'arfa',
+                    type: 'simple',
+                    value: 'salam'
+                },
+                {
+                    from: 'arfa',
+                    to: 'neda',
+                    type: 'simple',
+                    value: 'khobi ?'
+                },
+                {
+                    from: 'arfa',
+                    to: 'neda',
+                    type: 'simple',
+                    value: 'salam'
+                },
+                {
+                    from: 'neda',
+                    to: 'arfa',
+                    type: 'simple',
+                    value: 'salam'
+                },
+                {
+                    from: 'arfa',
+                    to: 'neda',
+                    type: 'simple',
+                    value: 'khobi ?'
+                },
+                {
+                    from: 'arfa',
+                    to: 'neda',
+                    type: 'simple',
+                    value: 'salam'
+                },
+                {
+                    from: 'neda',
+                    to: 'arfa',
+                    type: 'simple',
+                    value: 'salam'
+                },
+                {
+                    from: 'arfa',
+                    to: 'neda',
+                    type: 'simple',
+                    value: 'khobi ?'
+                },
+                {
+                    from: 'arfa',
+                    to: 'neda',
+                    type: 'simple',
+                    value: 'salam'
+                },
+                {
+                    from: 'neda',
+                    to: 'arfa',
+                    type: 'simple',
+                    value: 'salam'
+                },
+                {
+                    from: 'arfa',
+                    to: 'neda',
+                    type: 'simple',
+                    value: 'khobi ?'
+                },
+                {
+                    from: 'arfa',
+                    to: 'neda',
+                    type: 'simple',
+                    value: 'salam'
+                },
+                {
+                    from: 'neda',
+                    to: 'arfa',
+                    type: 'simple',
+                    value: 'salam'
+                },
+                {
+                    from: 'arfa',
+                    to: 'neda',
+                    type: 'simple',
+                    value: 'khobi ?'
+                },
+                {
+                    from: 'arfa',
+                    to: 'neda',
+                    type: 'simple',
+                    value: 'salam'
+                },
+                {
+                    from: 'neda',
+                    to: 'arfa',
+                    type: 'simple',
+                    value: 'salam'
+                },
+                {
+                    from: 'arfa',
+                    to: 'neda',
+                    type: 'simple',
+                    value: 'khobi ?'
+                },
+                {
+                    from: 'arfa',
+                    to: 'neda',
+                    type: 'simple',
+                    value: 'salam'
+                },
+                {
+                    from: 'neda',
+                    to: 'arfa',
+                    type: 'simple',
+                    value: 'salam'
+                },
+                {
+                    from: 'arfa',
+                    to: 'neda',
+                    type: 'simple',
+                    value: 'khobi ?'
+                },
+                {
+                    from: 'arfa',
+                    to: 'neda',
+                    type: 'simple',
+                    value: 'salam'
+                },
+                {
+                    from: 'neda',
+                    to: 'arfa',
+                    type: 'simple',
+                    value: 'salam'
+                },
+                {
+                    from: 'arfa',
+                    to: 'neda',
+                    type: 'simple',
+                    value: 'khobi ?'
+                },
+                {
+                    from: 'arfa',
+                    to: 'neda',
+                    type: 'simple',
+                    value: 'salam'
+                },
+                {
+                    from: 'neda',
+                    to: 'arfa',
+                    type: 'simple',
+                    value: 'salam'
+                },
+                {
+                    from: 'arfa',
+                    to: 'neda',
+                    type: 'simple',
+                    value: 'khobi ?'
+                },
+                {
+                    from: 'arfa',
+                    to: 'neda',
+                    type: 'simple',
+                    value: 'salam'
+                },
+                {
+                    from: 'neda',
+                    to: 'arfa',
+                    type: 'simple',
+                    value: 'salam'
+                },
+                {
+                    from: 'arfa',
+                    to: 'neda',
+                    type: 'simple',
+                    value: 'khobi ?'
+                },
+                {
+                    from: 'arfa',
+                    to: 'neda',
+                    type: 'simple',
+                    value: 'salam'
+                },
+                {
+                    from: 'neda',
+                    to: 'arfa',
+                    type: 'simple',
+                    value: 'salam'
+                },
+                {
+                    from: 'arfa',
+                    to: 'neda',
+                    type: 'simple',
+                    value: 'khobi ?'
+                },
+                {
+                    from: 'arfa',
+                    to: 'neda',
+                    type: 'simple',
+                    value: 'salam'
+                },
+                {
+                    from: 'neda',
+                    to: 'arfa',
+                    type: 'simple',
+                    value: 'salam'
+                },
+                {
+                    from: 'arfa',
+                    to: 'neda',
+                    type: 'simple',
+                    value: 'khobi ?'
+                },
+                {
+                    from: 'arfa',
+                    to: 'neda',
+                    type: 'simple',
+                    value: 'salam'
+                },
+                {
+                    from: 'neda',
+                    to: 'arfa',
+                    type: 'simple',
+                    value: 'salam'
+                },
+                {
+                    from: 'arfa',
+                    to: 'neda',
+                    type: 'simple',
+                    value: 'khobi ?'
+                },
+                {
+                    from: 'arfa',
+                    to: 'neda',
+                    type: 'simple',
+                    value: 'salam'
+                },
+                {
+                    from: 'neda',
+                    to: 'arfa',
+                    type: 'simple',
+                    value: 'salam'
+                },
+                {
+                    from: 'arfa',
+                    to: 'neda',
+                    type: 'simple',
+                    value: 'khobi ?'
+                },
+                {
+                    from: 'arfa',
+                    to: 'neda',
+                    type: 'simple',
+                    value: 'salam'
+                },
+                {
+                    from: 'neda',
+                    to: 'arfa',
+                    type: 'simple',
+                    value: 'salam'
+                },
+                {
+                    from: 'arfa',
+                    to: 'neda',
+                    type: 'simple',
+                    value: 'khobi ?'
+                },
+                {
+                    from: 'arfa',
+                    to: 'neda',
+                    type: 'simple',
+                    value: 'salam'
+                },
+                {
+                    from: 'neda',
+                    to: 'arfa',
+                    type: 'simple',
+                    value: 'salam'
+                },
+                {
+                    from: 'arfa',
+                    to: 'neda',
+                    type: 'simple',
+                    value: 'khobi ?'
+                },
                 {
                     from: 'arfa',
                     to: 'neda',
