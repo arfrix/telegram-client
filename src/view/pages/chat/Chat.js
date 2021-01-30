@@ -1,15 +1,17 @@
 import React, { useContext, useRef } from 'react'
 import {postMessage} from '../../../common/Server'
 import {chatContext} from '../../../stores/chat/ChatContext'
+import useInput from '../../components/common/useInput'
 import './Chat.scss'
 
 export default function Chat({data: chatData}) {
 
     const chat = useRef(null);
     const {chatDataDispatcher} = useContext(chatContext)
+    const messageInput = useInput("هرچه میخواهی بگو")
 
     function sendMessage() {
-        chatData.messages.push({message:'baleeeeeee', from:'from', to: chatData.name, type:'simple'})
+        chatData.messages.push({message: messageInput.value, from:'from', to: chatData.name, type:'simple'})
         postMessage({dispatcher: chatDataDispatcher , chatData})
     }
 
@@ -29,7 +31,10 @@ export default function Chat({data: chatData}) {
                 </div>
             )
         }
-        <div style={{backgroundColor: 'red'}} onClick={() => sendMessage() }>send</div>
+        <div className="chat__send" >
+            <input className="chat__send__input" type="text" {...messageInput}/>
+            <div className="chat__send__btn" onClick={() => sendMessage() } >send</div>
+        </div>
         </div>
     )
 }
