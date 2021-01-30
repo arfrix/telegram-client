@@ -9,6 +9,11 @@
     background-color: rgb(60, 83, 92);
     position: relative;
 
+    &__messageList {
+        position: fixed;
+        bottom: 50px;
+    }
+    
     &__message {
         display: flex;
         animation: initial-anim 0.001s ease-in-out;

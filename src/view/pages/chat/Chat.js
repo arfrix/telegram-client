@@ -24,13 +24,14 @@ export default function Chat({data: chatData}) {
     };
 
     return ( 
-        <div ref={chat} className="chat">
-            {chatData.messages.map((message) => 
-                <div className="chat__message" onAnimationEnd={setScrollPosition}>
-                    {message.message}
-                </div>
-            )
-        }
+        <div className="chat">
+            <div ref={chat} className="chat__messageList">
+                {chatData.messages.map((message) => 
+                    <div className="chat__message" onAnimationEnd={setScrollPosition}>
+                        {message.message}
+                    </div>
+                )}
+            </div>
         <div className="chat__send" >
             <input className="chat__send__input" type="text" {...messageInput}/>
             <div className="chat__send__btn" onClick={() => sendMessage() } >send</div>
