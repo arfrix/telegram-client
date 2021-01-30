@@ -38,8 +38,14 @@
             font-size: 13px;
             text-align: end;
         }
+        input:focus {
+            outline: none;
+          }
 
         &__btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             width: 7vw;
             background-color: rgb(104, 143, 158);
         }
