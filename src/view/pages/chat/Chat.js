@@ -37,6 +37,10 @@ export default function Chat({data: chatData}) {
 
     return ( 
         <div className="chat">
+            <div className="chat__header">
+                <img className="chat__header__img" src={chatData.profilePic}/>
+                <div className="chat__header__content">{chatData.name}</div>
+            </div> 
             <div ref={chat} className="chat__messageList">
                 {chatData.messages.map((message) => 
                     <div className={getMessageClasses({whoAreYouTalkingTo: chatData.name, messageFrom: message.from })} onAnimationEnd={setScrollPosition}>

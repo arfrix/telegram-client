@@ -1,6 +1,4 @@
-import React, { useContext } from 'react'
-import {contactContext} from '../stores/contact/ContactContext'
-
+import images from '../res/images'
 
 export function FetchContacts({dispatcher}) {
 
@@ -38,37 +36,31 @@ export function FetchChats({dispatcher}) {
     const data = [
         {
             name:'ali',
-            profilePic: null,
+            profilePic: images.image.profilePicSample.default,
             messages:[
                 {
                     from: 'arfa',
                     to: 'ali',
                     type: 'simple',
-                    value: 'salam'
+                    message: 'salam'
                 },
                 {
                     from: 'ali',
                     to: 'arfa',
                     type: 'simple',
-                    value: 'salam'
+                    message: 'salam'
                 },
                 {
                     from: 'arfa',
                     to: 'ali',
                     type: 'simple',
-                    value: 'khobi ?'
-                },
-                // {
-                //     from: '',
-                //     to: '',
-                //     type: '',
-                //     value: ''
-                // },
+                    message: 'khobi ?'
+                }
             ]
         },
         {
             name:'neda',
-            profilePic: null,
+            profilePic: images.image.profilePicSample.default,
             messages:[
                 {
                     from: 'arfa',

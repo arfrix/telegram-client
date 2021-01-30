@@ -4,13 +4,38 @@
 .chat {
     height: 100%;
     width: 62vw;
-    overflow: auto;
+    
     color: aliceblue;
     background-color: #18191d;
     position: relative;
 
+    &__header {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        padding: 10px 0 10px 15px;
+        background-color: #282e33;
+        border-left: 1px solid #000000;
+        box-shadow: 7px 0px 10px rgb(0, 0, 0);
+        z-index: 1;
+
+        &__img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        &__content {
+            margin-left: 10px;
+        }
+    }
+
     &__messageList {
         width: 62vw;
+        max-height: 100%;
+        overflow: auto;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
@@ -57,10 +82,17 @@
 
         &__input {
             width: 55vw;
-            height: 35px;
-            font-size: 13px;
-            text-align: end;
+            height: 40px;
+            font-size: 15px;
             font-family: IRANSans;
+            background-color: #282e33;
+            border: none;
+            border-left: 1px solid #000000;
+            padding-right: 10px;
+            box-sizing: border-box;
+            color: #fff;
+            direction: rtl;
+            text-align: right;
         }
         input:focus {
             outline: none;
@@ -71,7 +103,7 @@
             align-items: center;
             justify-content: center;
             width: 7vw;
-            background-color: rgb(104, 143, 158);
+            background-color: #32a797;
         }
     }
 }
