@@ -11,8 +11,13 @@ export default function Chat({data: chatData}) {
     const messageInput = useInput("هرچه میخواهی بگو")
 
     function sendMessage() {
-        chatData.messages.push({message: messageInput.value, from:'from', to: chatData.name, type:'simple'})
+        chatData.messages.push({message: messageInput.value, from:'arfa', to: chatData.name, type:'simple'})
         postMessage({dispatcher: chatDataDispatcher , chatData})
+
+        setTimeout(() => {
+            chatData.messages.push({message: messageInput.value, from:chatData.name, to: 'arfa', type:'simple'})
+            postMessage({dispatcher: chatDataDispatcher , chatData})
+        },2000)
     }
 
 
@@ -23,11 +28,18 @@ export default function Chat({data: chatData}) {
         // current.scrollIntoView({behavior: "smooth", block: "end"});
     };
 
+    function getMessageClasses({ whoAreYouTalkingTo, messageFrom}) {
+        if(whoAreYouTalkingTo === messageFrom) {
+            return 'chat__message chat__message--received'
+        }
+        return 'chat__message chat__message--sent'
+    }
+
     return ( 
         <div className="chat">
             <div ref={chat} className="chat__messageList">
                 {chatData.messages.map((message) => 
-                    <div className="chat__message" onAnimationEnd={setScrollPosition}>
+                    <div className={getMessageClasses({whoAreYouTalkingTo: chatData.name, messageFrom: message.from })} onAnimationEnd={setScrollPosition}>
                         {message.message}
                     </div>
                 )}
