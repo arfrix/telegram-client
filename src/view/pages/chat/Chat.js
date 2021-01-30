@@ -1,14 +1,17 @@
-import React, { useContext, useRef } from 'react'
+import React, { useContext, useRef, useState } from 'react'
 import {postMessage} from '../../../common/Server'
 import {chatContext} from '../../../stores/chat/ChatContext'
 import useInput from '../../components/common/useInput'
+import ContactInfo from '../contactInfo/ContactInfo'
 import './Chat.scss'
 
-export default function Chat({data: chatData}) {
+export default function Chat({data: chatData, contactInfo, continueChat}) {
 
+    console.log(chatData)
     const chat = useRef(null);
     const {chatDataDispatcher} = useContext(chatContext)
     const messageInput = useInput("هرچه میخواهی بگو")
+    const [isShowContactInfo, setIsShowContactInfo] = useState(false)
 
     function sendMessage() {
         chatData.messages.push({message: messageInput.value, from:'arfa', to: chatData.name, type:'simple'})
@@ -37,10 +40,11 @@ export default function Chat({data: chatData}) {
 
     return ( 
         <div className="chat">
-            <div className="chat__header">
+            <div className="chat__header" onClick={() => setIsShowContactInfo(true)}>
                 <img className="chat__header__img" src={chatData.profilePic}/>
                 <div className="chat__header__content">{chatData.name}</div>
             </div> 
+            {isShowContactInfo && <ContactInfo data={contactInfo} hasCloseBtn onOpen={setIsShowContactInfo}/>}
             <div ref={chat} className="chat__messageList">
                 {chatData.messages.map((message) => 
                     <div className={getMessageClasses({whoAreYouTalkingTo: chatData.name, messageFrom: message.from })} onAnimationEnd={setScrollPosition}>

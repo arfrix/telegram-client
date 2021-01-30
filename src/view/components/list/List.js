@@ -24,7 +24,7 @@ export default function List({itemsInfo, currentPage, onClick}) {
     return (
         <div className="list">
             {isChat ? itemsInfo.chats.data.map((data) => 
-            <div className="card" onClick={() => onClick(data)}>
+            <div className="card" onClick={() => onClick(data.name)}>
                 <img className="card__proifleImg" src={data.profilePic}/>
                 <div className="card__content">
                     <CardContent username={data.name} lastMessage={data.messages[data.messages.length - 1].message} />
@@ -33,7 +33,7 @@ export default function List({itemsInfo, currentPage, onClick}) {
             
             ) :
             itemsInfo.contacts.data.map((data) => 
-            <div className="card" onClick={() => onClick(data)}>
+            <div className="card" onClick={() => onClick(data.name)}>
                 <img className="card__proifleImg" src={data.profilePic}/>
                 <div className="card__content">
                     <CardContent username={data.name}/>

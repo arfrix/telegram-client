@@ -59,6 +59,54 @@ export function FetchChats({dispatcher}) {
             ]
         },
         {
+            name:'arash',
+            profilePic: images.image.profilePicSample4.default,
+            messages:[
+                {
+                    from: 'arfa',
+                    to: 'arash',
+                    type: 'simple',
+                    message: 'salam'
+                },
+                {
+                    from: 'arash',
+                    to: 'arfa',
+                    type: 'simple',
+                    message: 'salam'
+                },
+                {
+                    from: 'arfa',
+                    to: 'arash',
+                    type: 'simple',
+                    message: 'khobi ?????????'
+                }
+            ]
+        },
+        {
+            name:'mohamad',
+            profilePic: images.image.profilePicSample5.default,
+            messages:[
+                {
+                    from: 'arfa',
+                    to: 'mohamad',
+                    type: 'simple',
+                    message: 'salam'
+                },
+                {
+                    from: 'mohamad',
+                    to: 'arfa',
+                    type: 'simple',
+                    message: 'salam'
+                },
+                {
+                    from: 'arfa',
+                    to: 'mohamad',
+                    type: 'simple',
+                    message: 'khobi ?'
+                }
+            ]
+        },
+        {
             name:'neda',
             profilePic: images.image.profilePicSample3.default,
             messages:[

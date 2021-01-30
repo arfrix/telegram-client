@@ -1,21 +1,41 @@
 
 .contact {
     width: 40vw;
-    height: 50vh;
+    height: 40vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #fff;
+    position: absolute;
+    right: 16vw;
+    top:10vh;
+    border-radius: 15px;
+    color: #fff;
+    background-color: #282e33;
+    box-shadow: 0px 0px 15px black;
 
     &__profileImg {
-        width: 70px;
-        height: 70px;
+        width: 110px;
+        height: 110px;
         border-radius: 50%;
-        margin-top: 15px;
+        margin-top: 30px;
     }
 
     &__name {
         margin-top: 20px;
+    }
+
+    &__chatbtn {
+        border: 1px solid #32a797;
+        color: #32a797;
+        border-radius: 7px;
+        padding: 5px 15px 5px 15px;
+        font-size: 13px;
+        margin-top: 40px;
+
+        &--red {
+            border: 1px solid #ec3131;
+            color: #ec3131; 
+        }
     }
 
 }
