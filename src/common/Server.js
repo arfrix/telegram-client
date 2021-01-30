@@ -4,24 +4,24 @@ export function FetchContacts({dispatcher}) {
 
     const data = [
         {
-            name:'asghat',
+            name:'ali',
             phoneNumber: 9809120003335 ,
-            profilePic: null
+            profilePic: images.image.profilePicSample2.default
         },
         {
-            name:'aatefe',
+            name:'arash',
             phoneNumber: 9809120553335 ,
-            profilePic: null
+            profilePic: images.image.profilePicSample4.default
         },
         {
-            name:'monir',
+            name:'mohamad',
             phoneNumber: 9809124403335 ,
-            profilePic: null
+            profilePic: images.image.profilePicSample5.default
         },
         {
-            name:'sohrab',
+            name:'neda',
             phoneNumber: 9809120903335 ,
-            profilePic: null
+            profilePic: images.image.profilePicSample3.default
         },
     ]
     
@@ -36,7 +36,7 @@ export function FetchChats({dispatcher}) {
     const data = [
         {
             name:'ali',
-            profilePic: images.image.profilePicSample.default,
+            profilePic: images.image.profilePicSample2.default,
             messages:[
                 {
                     from: 'arfa',
@@ -60,7 +60,7 @@ export function FetchChats({dispatcher}) {
         },
         {
             name:'neda',
-            profilePic: images.image.profilePicSample.default,
+            profilePic: images.image.profilePicSample3.default,
             messages:[
                 {
                     from: 'arfa',
