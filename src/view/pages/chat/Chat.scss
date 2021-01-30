@@ -3,7 +3,7 @@
 
 .chat {
     height: 100%;
-    width: 62vw;
+    width: 72vw;
     
     color: aliceblue;
     background-color: #18191d;
@@ -33,7 +33,7 @@
     }
 
     &__messageList {
-        width: 62vw;
+        width: 73vw;
         max-height: 100%;
         overflow: auto;
         display: flex;
@@ -81,7 +81,7 @@
         bottom: 0;
 
         &__input {
-            width: 55vw;
+            width: 66vw;
             height: 40px;
             font-size: 15px;
             font-family: IRANSans;
