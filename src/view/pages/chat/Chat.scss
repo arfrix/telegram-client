@@ -3,9 +3,10 @@
 
 .chat {
     height: 100%;
-    width: 40vw;
+    width: 62vw;
     overflow: auto;
-    background-color: rgb(222, 253, 137);
+    color: aliceblue;
+    background-color: rgb(60, 83, 92);
     position: relative;
 
     &__message {
@@ -32,11 +33,15 @@
         bottom: 0;
 
         &__input {
-            width: 100%;
+            width: 55vw;
+            height: 35px;
+            font-size: 13px;
+            text-align: end;
         }
 
         &__btn {
-            background-color: rgb(250, 141, 141);
+            width: 7vw;
+            background-color: rgb(104, 143, 158);
         }
     }
 }
