@@ -1,5 +1,23 @@
+@font-face {
+    font-family: 'IRANSans';
+    src: url('../../../assets/fonts/IRANSans.ttf');    
+}
+@font-face {
+    font-family: 'IRANSans_Bold';
+    src: url('../../../assets/fonts/IRANSans_Bold.ttf');    
+}
+@font-face {
+    font-family: 'IRANSans_Light';
+    src: url('../../../assets/fonts/IRANSans_Light.ttf');    
+}
+@font-face {
+    font-family: 'IRANSans_Medium';
+    src: url('../../../assets/fonts/IRANSans_Medium.ttf');    
+}
+
 .home {
     display: flex;
+    font-family: IRANSans ;
 
     &__navBar {
         width: 8vw;
