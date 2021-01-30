@@ -33,8 +33,10 @@ export default function Home() {
     return (
         
         <div className="home">  
-            <div onClick={() => { setCurrentPage("contactInfo"); setSelectedListItem(null)} }>contacts</div>
-            <div onClick={() => { setCurrentPage("chat"); setSelectedListItem(null)} }>chat</div>
+            <div className="home__navBar">
+                <div className="home__navBar__item" onClick={() => { setCurrentPage("contactInfo"); setSelectedListItem(null)} }>contacts</div>
+                <div className="home__navBar__item" onClick={() => { setCurrentPage("chat"); setSelectedListItem(null)} }>chat</div>
+            </div>
             {chatData.chats.data && contactData.contacts.data &&  <List itemsInfo={listItemsData(currentPage)} currentPage={currentPage} onClick={setSelectedListItem}></List>}  
             <FloatingPageRouter path="chat" currentPage={currentPage} >
                 {selectedListItem && <Chat currentPage={currentPage} data={selectedListItem}/>}

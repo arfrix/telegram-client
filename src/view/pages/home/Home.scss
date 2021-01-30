@@ -1,3 +1,14 @@
 .home {
     display: flex;
+
+    &__navBar {
+        background-color: rgb(60, 83, 92);
+
+        &__item {
+            padding: 10px;
+            text-align: center;
+            border-bottom: 1px solid rgba(240, 248, 255, 0.479);
+            color: aliceblue;
+        }
+    }
 }
